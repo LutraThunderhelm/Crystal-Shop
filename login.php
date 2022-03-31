@@ -3,8 +3,9 @@
 	include "lib/footer.php";
 	if (($_POST['username'] == "Shopkeep") && ($_POST['password'] == "crystalized")){
 		session_start();
-		$_SESSION["loggedIn"] = True;
-		header("Location: welcome.html");
+		$_SESSION["logged_in"] = True;
+		$_SESSION["cart_price"] = 0;
+		header("Location: welcome.php");
 	}
 ?>
 <html>
