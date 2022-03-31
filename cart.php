@@ -2,6 +2,9 @@
         include "lib/header.php";
         include "lib/footer.php";
 	session_start();
+        if (!isset($_SESSION["logged_in"])){
+                header("Location: /~todom8/Crystal-Shop/login.php");
+        }
 	if (isset($_SESSION["ignus"])){
 		echo '<br>Ignus: ' . $_SESSION["ignus"];
 	}
