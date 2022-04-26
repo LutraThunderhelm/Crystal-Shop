@@ -14,6 +14,7 @@ echo'
                 <li><a href="/~todom8/Crystal-Shop/Products/industria.php">Industria</a></li>
 	</ul>
 ';
+
 ?>
 <html>
 	<img src="/~todom8/Crystal-Shop/images/footer.jpg" style="width:10%;">

@@ -8,6 +8,10 @@
 	if (isset($_POST["name"])){
 		setcookie("name", $_POST["name"], time() + (86400 * 30), "/");
 	}
+	if ($_SESSION["is_admin"] == 1) {
+		echo '<a href="admin.php">take me to the admin page</a>';
+	}
+
 ?>
 <html>
 	<br>Name:

@@ -7,6 +7,9 @@ CSC-155
 if (isset($_COOKIE["name"])){
 	echo "Hello, " . $_COOKIE["name"] . "!<br>";
 }
+
+$conn = mysqli_connect("localhost","todom8","todom8","todom8");
+$salt = "1920sDetective"
 ?>
 <html>
         <img src="/~todom8/Crystal-Shop/images/header.jpg" style="width:10%;">
